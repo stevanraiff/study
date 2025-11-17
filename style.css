@@ -1,0 +1,236 @@
+/* ==== GERAL ==== */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #0a0a1a;
+  color: #e0e0ff;
+  line-height: 1.7;
+  overflow-x: hidden;
+}
+
+h1, h2 {
+  font-weight: 600;
+  color: #00c4ff;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+p {
+  max-width: 900px;
+  margin: 10px auto;
+  font-size: 1.1rem;
+  text-align: center;
+  opacity: 0.9;
+}
+
+/* ==== NAVBAR ==== */
+header {
+  background: rgba(0, 0, 40, 0.85);
+  backdrop-filter: blur(8px);
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+nav {
+  text-align: center;
+}
+
+nav a {
+  color: #ffffff;
+  margin: 0 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #00c4ff;
+  text-shadow: 0 0 10px #00c4ff;
+}
+
+/* ==== SEÇÕES ==== */
+section {
+  padding: 100px 20px;
+  min-height: 100vh;
+  position: relative;
+}
+
+#inicio {
+  background: linear-gradient(135deg, #060612, #1a1a40);
+  animation: fadeIn 1.2s ease-in;
+}
+
+#Princípio {
+  background: linear-gradient(135deg, #1a1a40, #0c0c1f);
+  border-top: 2px solid #00c4ff20;
+  animation: fadeUp 1.2s ease-in;
+}
+
+#deep-inside-the-iceberg {
+  background: linear-gradient(135deg, #0c0c1f, #060612);
+  border-top: 2px solid #00c4ff20;
+  animation: fadeUp 1.2s ease-in;
+}
+
+/* ==== IMAGENS ==== */
+section img {
+  display: block;
+  max-width: 600px;
+  width: 90%;
+  margin: 30px auto;
+  border-radius: 15px;
+  box-shadow: 0 0 30px rgba(0, 196, 255, 0.15);
+  transition: transform 0.4s, box-shadow 0.4s;
+}
+
+section img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 40px rgba(0, 196, 255, 0.35);
+}
+
+/* ==== BOTÃO ==== */
+button {
+  display: inline-block;
+  margin-top: 40px;
+  background: #00c4ff;
+  color: #000;
+  border: none;
+  padding: 15px 35px;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #fff;
+  color: #000;
+  box-shadow: 0 0 20px #00c4ff;
+}
+
+/* ==== EFEITOS ==== */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(60px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ==== FOOTER ==== */
+footer {
+  text-align: center;
+  padding: 30px;
+  font-size: 0.9rem;
+  background: #060612;
+  color: #aaa;
+  border-top: 1px solid #222;
+}
+
+/* ==== TEXTO DIGITADO ==== */
+#typed-text {
+  font-size: 1.2rem;
+  max-width: 900px;
+  text-align: center;
+  margin: 0 auto;
+  opacity: 0.95;
+  white-space: pre-line;
+  min-height: 200px;
+}
+#particles {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: radial-gradient(circle at center, #060612 0%, #0a0a1a 100%);
+}
+/* ==== FONTES ==== */
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif; /* ou 'Poppins' */
+  background-color: #0a0a1a;
+  color: #e0e0ff;
+  line-height: 1.7;
+  overflow-x: hidden;
+  font-size: 17px; /* tamanho base */
+}
+
+/* ==== TÍTULOS ==== */
+h1, h2 {
+  font-family: 'Rajdhani', sans-serif; /* ou 'Orbitron' */
+  font-weight: 600;
+  color: #00c4ff;
+  text-align: center;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 2.8rem; /* menor e equilibrado */
+}
+
+h2 {
+  font-size: 1.8rem;
+  margin-top: 0;
+}
+
+/* ==== PARÁGRAFOS ==== */
+p {
+  max-width: 850px;
+  margin: 8px auto;
+  font-size: 1.05rem;
+  text-align: center;
+  opacity: 0.9;
+}
+
+/* ==== SEÇÕES ==== */
+section {
+  padding: 60px 20px; /* menos espaço vertical */
+  min-height: auto; /* remove altura fixa */
+}
+
+section img {
+  margin: 25px auto;
+  max-width: 550px;
+  border-radius: 12px;
+  box-shadow: 0 0 25px rgba(0, 196, 255, 0.15);
+}
+h1, h2 {
+  animation: glowPulse 4s ease-in-out infinite;
+}
+
+@keyframes glowPulse {
+  0%, 100% {
+    text-shadow: 0 0 10px #00c4ff80, 0 0 20px #00c4ff60;
+  }
+  50% {
+    text-shadow: 0 0 20px #00c4ffcc, 0 0 40px #00c4ff99;
+  }
+}
+section p, section h1, section h2 {
+  background: rgba(10, 10, 20, 0.8);
+  border: 1px solid rgba(0, 196, 255, 0.2);
+  border-radius: 10px;
+  padding: 12px 22px;
+  box-shadow: 0 0 15px rgba(0, 196, 255, 0.1);
+}
+button:hover {
+  transform: scale(1.1);
+  background-color: #3e8e41;
+}
+img:hover {
+  filter: brightness(1.2);
+}
+.dark {
+  background-color: #111;
+  color: #eee;
+}
+
